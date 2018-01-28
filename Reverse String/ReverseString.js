@@ -10,5 +10,10 @@ Given s = "hello", return "olleh".
  * @return {string}
  */
 var reverseString = function(s) {
-    return s.split('').reverse().join('');
+  // return s.split('').reverse().join('');
+  let arr = [];
+  for(let i=s.length-1; i>=0; i--){
+    arr.push(s[i]);
+  }
+  return arr.join('');
 };
