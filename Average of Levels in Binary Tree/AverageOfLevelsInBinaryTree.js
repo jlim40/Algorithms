@@ -21,6 +21,7 @@ The range of node's value is in the range of 32-bit signed integer.
  *     this.left = this.right = null;
  * }
  */
+ 
 /**
  * @param {TreeNode} root
  * @return {number[]}
