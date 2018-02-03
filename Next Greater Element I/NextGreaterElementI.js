@@ -21,7 +21,6 @@ All elements in nums1 and nums2 are unique.
 The length of both nums1 and nums2 would not exceed 1000.
 */
 
-
 /**
  * @param {number[]} findNums
  * @param {number[]} nums
@@ -34,6 +33,7 @@ var nextGreaterElement = function(findNums, nums) {
         if (found !== -1) {
             while (nums[++found] < n);
 
+            // -1 if not found
             if (found >= nums.length) found = -1;
             else found = nums[found];
         }
