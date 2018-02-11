@@ -21,7 +21,6 @@ s.length will be between 1 and 50,000.
 s will only consist of "0" or "1" characters.
 */
 
-
 /**
  * @param {string} s
  * @return {number}
