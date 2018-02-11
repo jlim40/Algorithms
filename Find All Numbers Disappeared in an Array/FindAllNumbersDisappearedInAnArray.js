@@ -14,6 +14,7 @@ Output:
 [5,6]
 */
 
+
 /**
  * @param {number[]} nums
  * @return {number[]}
