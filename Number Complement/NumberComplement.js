@@ -19,7 +19,7 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
  * @return {number}
  */
 var findComplement = function(num) {
-    let str = [...num.toString(2)];
-    str = str.map(c=> c == '0' ? '1' : '0').join('');
-    return parseInt(str, 2);
-};s
+  let str = [...num.toString(2)];
+  str = str.map(c => (c == '0' ? '1' : '0')).join('');
+  return parseInt(str, 2);
+};
