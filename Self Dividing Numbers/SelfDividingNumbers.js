@@ -22,24 +22,24 @@ The boundaries of each input argument are 1 <= left <= right <= 10000.
  * @return {number[]}
  */
 var selfDividingNumbers = function(left, right) {
-	let selfDivisibleNums = [];
-	let selfDivisible = true;
-	let lastDigit;
-    let num;
-	for(let i=left; i <= right; i++){
-		num = i;
-		while(num > 0){
-			lastDigit = num%10;
-			if(lastDigit === 0 || i%lastDigit > 0){
-				selfDivisible = false;
-				break;
-			}
-            num = Math.trunc(num/10);
-		}
-		if(selfDivisible){
-			selfDivisibleNums.push(i);
-		}
-        selfDivisible = true;
-	}
-    return selfDivisibleNums;
+  let selfDivisibleNums = [];
+  let selfDivisible = true;
+  let lastDigit;
+  let num;
+  for (let i = left; i <= right; i++) {
+    num = i;
+    while (num > 0) {
+      lastDigit = num % 10;
+      if (lastDigit === 0 || i % lastDigit > 0) {
+        selfDivisible = false;
+        break;
+      }
+      num = Math.trunc(num / 10);
+    }
+    if (selfDivisible) {
+      selfDivisibleNums.push(i);
+    }
+    selfDivisible = true;
+  }
+  return selfDivisibleNums;
 };
