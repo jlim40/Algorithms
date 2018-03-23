@@ -18,13 +18,12 @@ A, B have equal lengths in range [1, 100].
 A[i], B[i] are integers in range [0, 10^5].
 */
 
-
 /**
  * @param {number[]} A
  * @param {number[]} B
  * @return {number[]}
  */
 var anagramMappings = (A, B) => {
-    let map = new Map(B.map((num, idx) => [num, idx]));
-    return A.map((a) => map.get(a));
-}
+  let map = new Map(B.map((num, idx) => [num, idx]));
+  return A.map(a => map.get(a));
+};
